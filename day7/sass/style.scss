@@ -1,0 +1,21 @@
+body {
+
+ background: red;
+ font-family: arial, Arial, Helvetica, sans-serif;
+
+}
+
+@import 'shadows
+
+@mixin border-radius($radius) {
+  
+   
+
+    }
+
+    .box {
+        @include :border-radius(10px);
+
+        }
+
+        @mixin nice_line_spacing

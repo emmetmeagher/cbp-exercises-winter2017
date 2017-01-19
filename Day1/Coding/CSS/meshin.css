@@ -1,0 +1,13 @@
+
+li {
+    list-style-image: url(http://classes.codingbootcamp.cz/assets/classes/8/bullet.png);
+    font-family: a
+
+
+}
+.nodot {
+
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
