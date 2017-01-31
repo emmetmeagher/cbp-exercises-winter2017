@@ -3,9 +3,29 @@ body {
 	background-color: black;
 	color: white;
 	font-family: sans-serif;
+	padding: 10px;
 
 }
 
 h1 {
 	color: red;
+}
+
+@media screen and (min-width: 400px) {
+
+body {
+
+	background-color: green;
+
+
+	color: black;
+}
+}
+.hero_heading h1{
+    border: 1px solid red;
+    color: white;
+    //top: 0; left: 0; bottom: 0; right: 0;
+    width: 600px;/*added*/
+    max-width:80%;/*to leave spaces around your text on responsive*/
+    margin:auto;/*changed*/
 }

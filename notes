@@ -8,4 +8,165 @@ filter
 opacity
 position
  DRUM WIH A ROACH
+
+
+<______________________________________________________________________>
+ARRAYS
+(1).
+collection of elements, each identified by at least one array INDEX or KEY
+
+ $odd = array (1, 3, 5, 7);
+
+ $odd = [1, 3, 5, 7];
+
+          0 1 2 3
+ values - 1 3 5 7 
+
+ echo $odd[2]
+
+(2).
+ASSOCIATIVE ARRAYS, KEYS ARE STRINGS
+
+$user = array ( 
+         'firstname' => 'John',
+         'lastname'  => 'Foo' ,
+         'email'     => 'foo@bar.net',
+         'country'   => 'US'
+              );
+
+             
+            fn   ln     em         c
+  values - John  Foo  foo@bar.net  US
+
+  echo $user['firstname'];
+
+(1)
+E.G. 
+
+<?php 
+
+$a = array(
+
+'name'=> 'john',
+'lastname'=> 'walker',
+'city'=> 'Prague',
+'country' => 'CZ',
+'job'=> 'nope',
+  
+          );
+
+var_dump($a);
+$a[]=123;
+
+
+(4)
+LOOPS - ITERATE, ALSO THROUGH ARRAYS
+
+for ($i = 0; $i < 10; $i++) {
+	echo $i;
+}
+
+foreach ($uper as $key => $value) {
+	echo "$key $value";
+}
+
+foreach ($user as $value) {
+	echo $value;
+}
+
+E.G. 
+(2)
+
+<?php 
+$a = array(
+'name' => 'lemon',
+'lastname' => 'ade',
+'age' => '420',
+'color' => 'yellow',
+);
+
+foreach ($a as $key => $value) {
+   echo $key;
+   echo ': ';
+   echo $value;
+   echo '<br>';
+   echo '<hr>';
+}
+
+
+(5)
+LOOPS-BREAK
+
+for ($i = 0; $i < 10; $i++) {
+	echo $i;
+	if($i > 5)
+}
+
+<_________________________________________________________________________________>
+
+FORMS, USER INPUT
+(1)
+<form action = "script.php" method = "get">
+HTML + form fields //** the html that you want and the form field **\\
+</form>
+
+(2)
+BASIC FORM FIELDS
+
+text
+<input type="text" name= "firstname" value="prefilled">
+
+checkbox
+<input type="checkbox" name="hungry" checked>
+
+radiobutton
+<input type="radio" name="country" value"US">
+<input type="radio" name="country" value"CZ" checked>
+
+E.G. 
+(1)
+GET METHOD
+<?php 
+
+var_dump($_GET);
+
+ ?>
+
+<form action="" method="get">
+	
+Product: 
+ <input type="text" name="product">
+
+recieve mail: 
+ <input type="checkbox" name="recieve mail">
+
+color:
+ <input type="radio" name="color" value="balck"> black
+ <input type="radio" name="color" value="balck"> white
+
+<input type="submit" value="click me!">
+
+</form>
+
+(3)
+FORM ACCESABILITY
+
+Dont use place holders--------------->
+
+if you wouldnt send the link to anybody dont use the get method use the post method instead 
+ header needs to go first 
+ then any outputs to the browser
  
+ <_________________________________________________________________________________>
+
+ LOOPEENS 
+ (1)
+ 
+
+<ul>
+<?php for($i = 0; $i < 5; $i++) : ?>
+
+  <li>list item nr. <?php echo $i+1; ?></li>
+
+<?php endfor; ?>
+</ul>
